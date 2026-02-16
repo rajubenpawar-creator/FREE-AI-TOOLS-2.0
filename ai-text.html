@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Text Generator – Free AI Writing Tool</title>
+<meta name="description" content="Generate essays, blog posts and emails instantly with our free AI text generator.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<h1>Free AI Text Generator</h1>
+
+<textarea id="inputText" placeholder="Enter topic"></textarea>
+<button onclick="generate()">Generate</button>
+
+<textarea id="outputText"></textarea>
+
+<section id="ads"></section>
+
+<h2>How It Works</h2>
+<p>Enter a topic and click generate. This demo version shows example text.</p>
+
+<h2>FAQ</h2>
+<p><strong>Is it free?</strong> Yes, limited daily credits.</p>
+
+<script>
+function generate(){
+useCredit();
+let input=document.getElementById("inputText").value;
+document.getElementById("outputText").value=
+"Sample AI generated content for: "+input;
+}
+</script>
+
+<script src="../assets/credits.js"></script>
+
+</body>
+</html>
