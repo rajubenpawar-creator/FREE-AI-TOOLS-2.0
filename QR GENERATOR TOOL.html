@@ -1,0 +1,15 @@
+<input type="text" id="qrInput">
+<button onclick="generateQR()">Generate QR</button>
+<div id="qrOutput"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+function generateQR(){
+useCredit();
+new QRCode(document.getElementById("qrOutput"),{
+text:document.getElementById("qrInput").value,
+width:200,
+height:200
+});
+}
+</script>
